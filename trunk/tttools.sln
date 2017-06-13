@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sotools", "sotools\sotools.vcxproj", "{55FC39ED-0EA2-473F-A93B-CC6958B47DB2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{172F440D-CC9F-4835-B4F9-E00C12FF2C99} = {172F440D-CC9F-4835-B4F9-E00C12FF2C99}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sodeps", "sodeps\sodeps.vcxproj", "{172F440D-CC9F-4835-B4F9-E00C12FF2C99}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55FC39ED-0EA2-473F-A93B-CC6958B47DB2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{55FC39ED-0EA2-473F-A93B-CC6958B47DB2}.Debug|Win32.Build.0 = Debug|Win32
+		{55FC39ED-0EA2-473F-A93B-CC6958B47DB2}.Debug|x64.ActiveCfg = Debug|x64
+		{55FC39ED-0EA2-473F-A93B-CC6958B47DB2}.Debug|x64.Build.0 = Debug|x64
+		{55FC39ED-0EA2-473F-A93B-CC6958B47DB2}.Release|Win32.ActiveCfg = Release|Win32
+		{55FC39ED-0EA2-473F-A93B-CC6958B47DB2}.Release|Win32.Build.0 = Release|Win32
+		{55FC39ED-0EA2-473F-A93B-CC6958B47DB2}.Release|x64.ActiveCfg = Release|x64
+		{55FC39ED-0EA2-473F-A93B-CC6958B47DB2}.Release|x64.Build.0 = Release|x64
+		{172F440D-CC9F-4835-B4F9-E00C12FF2C99}.Debug|Win32.ActiveCfg = Debug|Win32
+		{172F440D-CC9F-4835-B4F9-E00C12FF2C99}.Debug|Win32.Build.0 = Debug|Win32
+		{172F440D-CC9F-4835-B4F9-E00C12FF2C99}.Debug|x64.ActiveCfg = Debug|x64
+		{172F440D-CC9F-4835-B4F9-E00C12FF2C99}.Debug|x64.Build.0 = Debug|x64
+		{172F440D-CC9F-4835-B4F9-E00C12FF2C99}.Release|Win32.ActiveCfg = Release|Win32
+		{172F440D-CC9F-4835-B4F9-E00C12FF2C99}.Release|Win32.Build.0 = Release|Win32
+		{172F440D-CC9F-4835-B4F9-E00C12FF2C99}.Release|x64.ActiveCfg = Release|x64
+		{172F440D-CC9F-4835-B4F9-E00C12FF2C99}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

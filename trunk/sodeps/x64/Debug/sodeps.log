@@ -1,0 +1,23 @@
+﻿生成启动时间为 2017/6/13 17:08:52。
+     1>项目“g:\南方银谷\tttools\tttools\sodeps\sodeps.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl- /Od /D WIN32 /D _DEBUG /D _LIB /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt win32\IOCPModel.cpp
+         IOCPModel.cpp
+     1>win32\IOCPModel.cpp(109): warning C4244: “参数”: 从“SOCKET”转换到“unsigned int”，可能丢失数据
+     1>win32\IOCPModel.cpp(110): warning C4244: “参数”: 从“SOCKET”转换到“unsigned int”，可能丢失数据
+     1>win32\IOCPModel.cpp(563): warning C4244: “参数”: 从“SOCKET”转换到“unsigned int”，可能丢失数据
+     1>win32\IOCPModel.cpp(600): warning C4244: “参数”: 从“SOCKET”转换到“unsigned int”，可能丢失数据
+     1>win32\IOCPModel.cpp(634): warning C4244: “参数”: 从“SOCKET”转换到“unsigned int”，可能丢失数据
+     1>win32\IOCPModel.cpp(649): warning C4244: “初始化”: 从“SOCKET”转换到“int”，可能丢失数据
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\Lib.exe /OUT:"G:\南方银谷\tttools\tttools\x64\Debug\sodeps.lib" /NOLOGO /MACHINE:X64 x64\Debug\Client.obj
+         x64\Debug\stdafx.obj
+         x64\Debug\utils.obj
+         x64\Debug\IOCPModel.obj
+         x64\Debug\socket.obj
+         sodeps.vcxproj -> G:\南方银谷\tttools\tttools\x64\Debug\sodeps.lib
+     1>已完成生成项目“g:\南方银谷\tttools\tttools\sodeps\sodeps.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.17
