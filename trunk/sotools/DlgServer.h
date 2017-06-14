@@ -64,4 +64,5 @@ public:
 	afx_msg void OnBnClickedButtonManualSnd2();
 	
 	afx_msg void OnCbnDropdownComboIpList();
+	afx_msg void OnDestroy();
 };

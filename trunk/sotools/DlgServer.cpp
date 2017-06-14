@@ -48,6 +48,7 @@ BEGIN_MESSAGE_MAP(CDlgServer, CDialogEx)
 	ON_BN_CLICKED(IDC_BUTTON_MANUAL_SND1, &CDlgServer::OnBnClickedButtonManualSnd1)
 	ON_BN_CLICKED(IDC_BUTTON_MANUAL_SND2, &CDlgServer::OnBnClickedButtonManualSnd2)
 	ON_CBN_DROPDOWN(IDC_COMBO_IP_LIST, &CDlgServer::OnCbnDropdownComboIpList)
+	ON_WM_DESTROY()
 END_MESSAGE_MAP()
 
 
@@ -141,6 +142,7 @@ void CDlgServer::OnBnClickedButtonServerListen()
 void CDlgServer::OnBnClickedButtonStopListen()
 {
 	// TODO:  在此添加控件通知处理程序代码
+	m_stop = TRUE;
 	m_iocp_model.Stop();
 	GetDlgItem(IDC_BUTTON_SERVER_LISTEN)->EnableWindow(TRUE);
 #if 0
@@ -356,4 +358,15 @@ void CDlgServer::SendData(CString & data)
 		}
 	}
 	MessageBox("请选中需要发送数据的客户端连接！");
+}
+
+void CDlgServer::OnDestroy()
+{
+	if (!m_iocp_model.IsStoped())
+	{
+		m_iocp_model.Stop();
+	}
+	CDialogEx::OnDestroy();
+
+	// TODO:  在此处添加消息处理程序代码
 }

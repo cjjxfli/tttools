@@ -309,6 +309,11 @@ public:
 		}
 	}
 
+	bool IsStoped()
+	{
+		return m_stoped;
+	}
+
 protected:
 
 	// ≥ı ºªØIOCP
@@ -400,6 +405,8 @@ private:
 
 	cb_error m_cb_error;
 	void * m_cb_error_args;
+
+	bool m_stoped;
 
 };
 

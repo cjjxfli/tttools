@@ -35,6 +35,7 @@ CIOCPModel::CIOCPModel(void):
 	memset(m_func_args_, 0, sizeof(void*)* (CB_TIMEOUT + 1));
 	m_cb_error = NULL;
 	m_cb_error_args = NULL;
+	m_stoped = true;
 }
 
 
@@ -222,6 +223,7 @@ bool CIOCPModel::Start()
 
 	this->_ShowMessage(_T("系统准备就绪，等候连接....\n"));
 
+	m_stoped = false;
 	return true;
 }
 
@@ -252,6 +254,7 @@ void CIOCPModel::Stop()
 
 		this->_ShowMessage("停止监听\n");
 	}	
+	m_stoped = true;
 }
 
 
